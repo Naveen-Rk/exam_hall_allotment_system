@@ -112,7 +112,7 @@ echo "TIMING:  "; echo $row['TIMING'];
 
 	</div>
 </div>
-<!--short codes end here--></div></div>
+</div></div>
 
 </body>
 </html>

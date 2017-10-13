@@ -87,7 +87,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <?php
 include "stylee.css";
 require "connect.inc.php";
-$rn=$_POST['roomno'];  $rm="ROOM".$rn;
+$rn=$_POST['roomno']; 
+echo $rm="ROOM".$rn;
 echo $rm."<br> ";
 
 $r=$_POST['row'];
@@ -2159,28 +2160,12 @@ $t++;
 echo "</table>";
 }
 
-
-
-
-
-
 ?>
-
-
-
-
-
-
-
-
-
-
-
 
 
 	</div>
 </div>
-<!--short codes end here--></div></div>
+</div></div>
 
 </body>
 </html>

@@ -251,7 +251,7 @@ echo "</table>";
 
 	</div>
 </div>
-<!--short codes end here--></div></div>
+</div></div>
 
 </body>
 </html>

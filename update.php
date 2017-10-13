@@ -82,12 +82,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	  
 	  
       
-      <div class="form-group">
+      <!--<div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
           <button type="submit" class="btn btn-default btn-info">Submit</button>
         </div>
-   
-    </form>-->
+   -->
+    </form>
   </div>
  
 	<!--//forms-->
@@ -106,11 +106,11 @@ $rows=mysqli_num_rows($q2);
 $cols=mysqli_num_fields($q2);
 while($i<$cols)
 { $q="UPDATE  room$r SET col$i=$n WHERE col$i=$o";
-  @mysqli_query($q) or die(mysqli_error($conn));
+  $ans=mysqli_query($conn,$q);
   $i++;
 }
 $rt="SELECT*FROM room$r";
-$result = @mysqli_query($rt) or die(mysqli_error($conn));
+$result = @mysqli_query($conn,$rt) or die(mysqli_error($conn));
 echo "<br>";
 echo "ROOM".$r;
 
@@ -264,19 +264,9 @@ echo "</table>";
 
 ?>
 
-
-
-
-
-
-
-
-
-
-                     x
 	</div>
 </div>
-<!--short codes end here--></div></div>
+</div></div>
 
 </body>
 </html>

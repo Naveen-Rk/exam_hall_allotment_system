@@ -79,7 +79,7 @@ $n=1;       $rm=1;  $i=1;
 $q="SELECT * FROM student WHERE ROLL_NO=$r";
 $q2=@mysqli_query($conn,$q) or die(mysqli_error($conn));
 $ro = mysqli_fetch_array($q2);
-//$rm=$ro['ROOM_NO'];
+echo $rm=$ro['ROOM_NO'];
 echo "Room:  $rm<br>";
 $q3="SELECT*FROM room$rm";
 $result=@mysqli_query($conn,$q3) or die(mysqli_error($conn));
@@ -289,7 +289,7 @@ echo "</table>";
 
 	</div>
 </div>
-<!--short codes end here--></div></div>
+</div></div>
 
 </body>
 </html>
